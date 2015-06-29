@@ -112,18 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				84F444781B41977800E5B685 /* Categoris */,
-				84F444701B41963600E5B685 /* ModelCategoris */,
+				84F444701B41963600E5B685 /* Model Resources */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		84F444701B41963600E5B685 /* ModelCategoris */ = {
+		84F444701B41963600E5B685 /* Model Resources */ = {
 			isa = PBXGroup;
 			children = (
 				84F444811B41A0F900E5B685 /* PatientChart-v29.xcdatamodel */,
 				84F444711B41963600E5B685 /* readme */,
 			);
-			name = ModelCategoris;
+			name = "Model Resources";
 			path = modelCategoris;
 			sourceTree = "<group>";
 		};
