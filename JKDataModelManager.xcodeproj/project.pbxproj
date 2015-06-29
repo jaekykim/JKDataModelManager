@@ -33,11 +33,11 @@
 		84F444541B41950100E5B685 /* JKDataModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDataModelManager.h; sourceTree = "<group>"; };
 		84F444561B41950100E5B685 /* JKDataModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKDataModelManager.m; sourceTree = "<group>"; };
 		84F4446C1B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
-		84F4446F1B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		84F444711B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		84F444731B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		84F444751B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		84F444771B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F444791B41977800E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,25 +104,18 @@
 		84F4446D1B41963600E5B685 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84F4446E1B41963600E5B685 /* Model Resources */,
-				84F444701B41963600E5B685 /* modelCategoris */,
+				84F444781B41977800E5B685 /* Categoris */,
+				84F444701B41963600E5B685 /* ModelCategoris */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		84F4446E1B41963600E5B685 /* Model Resources */ = {
-			isa = PBXGroup;
-			children = (
-				84F4446F1B41963600E5B685 /* readme */,
-			);
-			path = "Model Resources";
-			sourceTree = "<group>";
-		};
-		84F444701B41963600E5B685 /* modelCategoris */ = {
+		84F444701B41963600E5B685 /* ModelCategoris */ = {
 			isa = PBXGroup;
 			children = (
 				84F444711B41963600E5B685 /* readme */,
 			);
+			name = ModelCategoris;
 			path = modelCategoris;
 			sourceTree = "<group>";
 		};
@@ -148,6 +141,14 @@
 				84F444771B41963600E5B685 /* readme */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		84F444781B41977800E5B685 /* Categoris */ = {
+			isa = PBXGroup;
+			children = (
+				84F444791B41977800E5B685 /* readme */,
+			);
+			path = Categoris;
 			sourceTree = "<group>";
 		};
 		8D1534A720E7EAADEEC010FC /* Frameworks */ = {
