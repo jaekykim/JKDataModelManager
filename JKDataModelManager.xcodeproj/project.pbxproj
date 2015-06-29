@@ -7,20 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36D5635AB12922F95A991557 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDAA6BC1BA65DB5388023B0 /* libPods.a */; };
 		84F444551B41950100E5B685 /* JKDataModelManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84F444541B41950100E5B685 /* JKDataModelManager.h */; };
 		84F444571B41950100E5B685 /* JKDataModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F444561B41950100E5B685 /* JKDataModelManager.m */; };
-		84F4445D1B41950100E5B685 /* libJKDataModelManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F444511B41950100E5B685 /* libJKDataModelManager.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		84F4445E1B41950100E5B685 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F444491B41950100E5B685 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84F444501B41950100E5B685;
-			remoteInfo = JKDataModelManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		84F4444F1B41950100E5B685 /* CopyFiles */ = {
@@ -36,11 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CDAA6BC1BA65DB5388023B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25BA3DD047EDD92A6B364BB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5DFE3074E2C56F8841F4950B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		84F444511B41950100E5B685 /* libJKDataModelManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJKDataModelManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F444541B41950100E5B685 /* JKDataModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDataModelManager.h; sourceTree = "<group>"; };
 		84F444561B41950100E5B685 /* JKDataModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKDataModelManager.m; sourceTree = "<group>"; };
-		84F4445C1B41950100E5B685 /* JKDataModelManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKDataModelManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F444621B41950100E5B685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F4446C1B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F4446F1B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F444711B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F444731B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F444751B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		84F444771B41963600E5B685 /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,26 +45,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84F444591B41950100E5B685 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84F4445D1B41950100E5B685 /* libJKDataModelManager.a in Frameworks */,
+				36D5635AB12922F95A991557 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C36EF5743EB7D440AF98E65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DFE3074E2C56F8841F4950B /* Pods.debug.xcconfig */,
+				25BA3DD047EDD92A6B364BB7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84F444481B41950100E5B685 = {
 			isa = PBXGroup;
 			children = (
+				84F4446B1B41963600E5B685 /* Error */,
+				84F4446D1B41963600E5B685 /* Model */,
+				84F444721B41963600E5B685 /* Parsers */,
+				84F444741B41963600E5B685 /* Requests */,
+				84F444761B41963600E5B685 /* Shared */,
 				84F444531B41950100E5B685 /* JKDataModelManager */,
-				84F444601B41950100E5B685 /* JKDataModelManagerTests */,
 				84F444521B41950100E5B685 /* Products */,
+				5C36EF5743EB7D440AF98E65 /* Pods */,
+				8D1534A720E7EAADEEC010FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				84F444511B41950100E5B685 /* libJKDataModelManager.a */,
-				84F4445C1B41950100E5B685 /* JKDataModelManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,20 +93,69 @@
 			path = JKDataModelManager;
 			sourceTree = "<group>";
 		};
-		84F444601B41950100E5B685 /* JKDataModelManagerTests */ = {
+		84F4446B1B41963600E5B685 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				84F444611B41950100E5B685 /* Supporting Files */,
+				84F4446C1B41963600E5B685 /* readme */,
 			);
-			path = JKDataModelManagerTests;
+			path = Error;
 			sourceTree = "<group>";
 		};
-		84F444611B41950100E5B685 /* Supporting Files */ = {
+		84F4446D1B41963600E5B685 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				84F444621B41950100E5B685 /* Info.plist */,
+				84F4446E1B41963600E5B685 /* Model Resources */,
+				84F444701B41963600E5B685 /* modelCategoris */,
 			);
-			name = "Supporting Files";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F4446E1B41963600E5B685 /* Model Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84F4446F1B41963600E5B685 /* readme */,
+			);
+			path = "Model Resources";
+			sourceTree = "<group>";
+		};
+		84F444701B41963600E5B685 /* modelCategoris */ = {
+			isa = PBXGroup;
+			children = (
+				84F444711B41963600E5B685 /* readme */,
+			);
+			path = modelCategoris;
+			sourceTree = "<group>";
+		};
+		84F444721B41963600E5B685 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				84F444731B41963600E5B685 /* readme */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		84F444741B41963600E5B685 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				84F444751B41963600E5B685 /* readme */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		84F444761B41963600E5B685 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				84F444771B41963600E5B685 /* readme */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8D1534A720E7EAADEEC010FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CDAA6BC1BA65DB5388023B0 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F444651B41950100E5B685 /* Build configuration list for PBXNativeTarget "JKDataModelManager" */;
 			buildPhases = (
+				F2969608D37A117D7E75A2CC /* Check Pods Manifest.lock */,
 				84F4444D1B41950100E5B685 /* Sources */,
 				84F4444E1B41950100E5B685 /* Frameworks */,
 				84F4444F1B41950100E5B685 /* CopyFiles */,
+				CCFF4CDF09F15E389243763C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,24 +179,6 @@
 			productName = JKDataModelManager;
 			productReference = 84F444511B41950100E5B685 /* libJKDataModelManager.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		84F4445B1B41950100E5B685 /* JKDataModelManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84F444681B41950100E5B685 /* Build configuration list for PBXNativeTarget "JKDataModelManagerTests" */;
-			buildPhases = (
-				84F444581B41950100E5B685 /* Sources */,
-				84F444591B41950100E5B685 /* Frameworks */,
-				84F4445A1B41950100E5B685 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84F4445F1B41950100E5B685 /* PBXTargetDependency */,
-			);
-			name = JKDataModelManagerTests;
-			productName = JKDataModelManagerTests;
-			productReference = 84F4445C1B41950100E5B685 /* JKDataModelManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,9 +190,6 @@
 				ORGANIZATIONNAME = "Jaekyong Kim";
 				TargetAttributes = {
 					84F444501B41950100E5B685 = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					84F4445B1B41950100E5B685 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -173,20 +207,42 @@
 			projectRoot = "";
 			targets = (
 				84F444501B41950100E5B685 /* JKDataModelManager */,
-				84F4445B1B41950100E5B685 /* JKDataModelManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		84F4445A1B41950100E5B685 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		CCFF4CDF09F15E389243763C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		F2969608D37A117D7E75A2CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84F4444D1B41950100E5B685 /* Sources */ = {
@@ -197,22 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F444581B41950100E5B685 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84F4445F1B41950100E5B685 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84F444501B41950100E5B685 /* JKDataModelManager */;
-			targetProxy = 84F4445E1B41950100E5B685 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84F444631B41950100E5B685 /* Debug */ = {
@@ -295,6 +336,7 @@
 		};
 		84F444661B41950100E5B685 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DFE3074E2C56F8841F4950B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,42 +346,11 @@
 		};
 		84F444671B41950100E5B685 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25BA3DD047EDD92A6B364BB7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		84F444691B41950100E5B685 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JKDataModelManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		84F4446A1B41950100E5B685 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JKDataModelManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -362,14 +373,7 @@
 				84F444671B41950100E5B685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		84F444681B41950100E5B685 /* Build configuration list for PBXNativeTarget "JKDataModelManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84F444691B41950100E5B685 /* Debug */,
-				84F4446A1B41950100E5B685 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
